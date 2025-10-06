@@ -15,7 +15,6 @@
       <nav aria-label="breadcrumb">
         <ol class="breadcrumb mb-0">
           <li class="breadcrumb-item"><a href="#">Inicio</a></li>
-          <li class="breadcrumb-item active" aria-current="page">Menú 1</li>
         </ol>
       </nav>
     </div>
@@ -28,18 +27,41 @@
     <div class="container-fluid px-5 pb-5">
       <div class="table-responsive">
         <table class="table table-bordered align-middle">
-          <thead class="table-dark">
+          <thead>
             <tr>
               <th> Name </th>
-              <th> Color </th>
+              <th> Video </th>
+              <th> Image </th>
+              <th> Reason </th>
             </tr>
           </thead>
 
           <tbody>
             {% for a in deseados %}
+
               <tr>
-                <td>{{ a.name }}</td>
-                <td>{{ a.color }}</td>
+                <td>
+                  <a href="{{ a.link }}" 
+                    target="_blank" 
+                    class="text-primary fw-semibold link-underline link-underline-opacity-0 link-underline-opacity-75-hover">
+                    {{ a.name }}
+                  </a>
+                </td>
+                <td>
+                  <iframe width="200" height="120" 
+                    src="{{ a.video }}" 
+                    title="Trailer de {{ a.name }}" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                  </iframe>
+                </td>
+                <td>
+                  <img src="{{ a.image }}" alt="{{ a.name }}" style="width: 120px; height: auto; border-radius: 8px;">
+                </td>
+                <td>
+                  {{ a.text }}
+                </td>
               </tr>
             {% else %}
                <tr>

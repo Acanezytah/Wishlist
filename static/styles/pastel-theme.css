@@ -1,0 +1,82 @@
+/* Colores pastel */
+:root {
+  --pastel-lila: #cdb4db;
+  --pastel-rosa: #ffc8dd;
+  --pastel-azul: #bde0fe;
+  --pastel-fondo: #f8f9fa; 
+  --texto-oscuro: #4a4a4a;
+}
+
+/* Barra superior (navbar) */
+.navbar {
+  background-color: var(--pastel-lila) !important;
+}
+
+.navbar .nav-link,
+.navbar .navbar-brand {
+  color: var(--texto-oscuro) !important;
+  font-weight: 500;
+}
+
+.navbar .nav-link:hover {
+  text-decoration: underline;
+}
+
+/* Encabezado principal */
+header.bg-primary {
+  background-color: var(--pastel-rosa) !important;
+  color: var(--texto-oscuro) !important;
+}
+
+/* Tabla */
+.table {
+  background-color: var(--pastel-azul) !important;
+  border-color: #a2d2ff !important;
+}
+
+.table thead {
+  background-color: #a2d2ff !important; 
+  color: var(--texto-oscuro) !important;
+}
+
+.table tbody tr:nth-child(even) {
+  background-color: #d7e3fc !important; /* filas alternadas */
+}
+
+.table td,
+.table th {
+  vertical-align: middle; 
+}
+
+/* Enlaces dentro de la tabla */
+.table a {
+  color: #6a4c93 !important;
+  text-decoration: none;
+}
+
+.table a:hover {
+  color: #5c3c85 !important;
+  text-decoration: underline;
+}
+
+/* Fondo general */
+body {
+  background-color: var(--pastel-fondo) !important;
+  color: var(--texto-oscuro);
+}
+
+/* Breadcrumb */
+.breadcrumb {
+  background-color: #ffe5ec !important;
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+}
+
+/* Ajuste para que el texto en la tercera columna de la tabla se ajuste */
+.table td:nth-child(3) {
+  max-width: 200px;
+  white-space: normal;
+  overflow-wrap: break-word; 
+}
+
+
