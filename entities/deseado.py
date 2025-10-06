@@ -24,6 +24,13 @@ class Deseado:
                 "https://www.nintendo.com/es-mx/store/products/professor-layton-and-the-new-world-of-steam-switch/?srsltid=AfmBOory-MuCUegwodRx1ItxsxZH1aPKLmQcy_pDeY9nN9sEBniVY5ct",
                 "Aun no sale pero lo quiero porque me gustan mucho los juegos de puzzles y professor layton es de mis sagas favoritaas!! Amo todo de ellos, en especial la musica.",
                 "https://www.youtube.com/embed/9Sj0BXBNugQ?si=F0QabTEeOTqvjSo2"),
+            cls("Steins;Gate 0",
+                "https://external-preview.redd.it/-ggECo27XKcLFA2hdu-Q-FIm_8LqAeiCBRoRSRbh1r4.jpg?width=1080&crop=smart&auto=webp&s=91cf43649dd25029659544c8db0ed95ae14e2153",
+                "https://store.steampowered.com/app/825630/STEINSGATE_0/",
+                "Me encantan los juegos que son principalmente historia. Jugué el primero y me volo la mente, así que quiero saber qué sucede en esta secuela, y mas aún pq es de viajes en el tiempo + amor tragico.",
+                "https://www.youtube.com/embed/ZHh-WR0Eu-g?si=xY7xWzimpkC5KjsG"),
+                
         ]
         return deseados
+
         
